@@ -1,1 +1,1 @@
-# otogecharabirthday
+「音ゲーキャラ誕生日カレンダー」のhtmlファイルです
