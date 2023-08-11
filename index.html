@@ -5,6 +5,7 @@
 	<meta name="viewport" content="target-densitydpi=device-dpi,width=device-width,initial-scale=1.0,user-scalable=yes">
 	<title>音ゲーキャラ誕生日カレンダー</title>
 	<style>
+	
 	body{
 		background-color:#FFFFFF
 	}
@@ -32,6 +33,51 @@
 		background: transparent;
 		border-left: solid 5px #7db4e6;
 	}
+
+	.hidden{
+		position: absolute;
+		opacity:0;
+	}
+
+	button:focus{
+		outline: 0;
+	}
+
+	.footer-001 {
+	    display: flex;
+	    align-items: center;
+	    flex-direction: column;
+	    padding: 25px 10px 10px;
+	    background-color: #2589d0;
+	}
+
+	.footer-001__logo {
+	    width: 130px;
+	    height: 30px;
+	}
+
+	.footer-001__list {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    gap: 0 1.5em;
+	    list-style-type: none;
+	    margin: 0 0 .5em;
+	    padding: .5em;
+	}
+
+	.footer-001__link {
+	    color: #fff;
+	    font-weight: 200;
+	    text-decoration: none;
+	}
+
+	.footer-001__copyright {
+	    margin: 0;
+	    color: #ffffffb3;
+	    font-weight: 200;
+	    font-size: .8em;
+	}
 	</style>
 </head>
 
@@ -56,6 +102,13 @@
 	<li>プロジェクトセカイ</li>
 	<li>ワールドダイスター　夢のステラリウム(<a href="https://gamerch.com/world-dai-star/entry/783082?utm_source=twitter&utm_medium=social">1</a>)</li>
 	</ul>
+	<h4>登録キャラ一覧</h4>
+	<nav>
+	<ul>
+	<li><a href="aiueo.html">五十音別</a></li>
+	<li><a href="birthmonth.html">誕生月別</a></li>
+	</ul>
+	</nav>
 	<h4>凡例</h4>
 	<ul>
 	<li>アイドルマスターCG→アイドルマスター　シンデレラガールズ</li>
@@ -68,8 +121,9 @@
 	<li>プリティーリズムDMF→プリティーリズム　ディアマイフューチャー</li>
 	</ul>
 	<h4>配布(2023.8.10更新)</h4>
-	<p><a href="" download>スプレッドシート</a></p>
+	<p><a href="https://docs.google.com/spreadsheets/d/1vgbkmwTZpj5vIwn0jjFF4nIkGL5w3ujM/edit?usp=drive_link&ouid=114118570615697050617&rtpof=true&sd=true" download>スプレッドシート</a></p>
 	<p><a href="" download>csvファイル(都度年を書き換えてください)</a></p>
+	<p><a href="https://drive.google.com/file/d/1URR5FUOo-qE1dOzXPPqJnUTSuxEPdXOj/view?usp=sharing" download>icsファイル(「ダウンロード」を選択してください)</a></p>
 	<br>
 	<iframe src="https://calendar.google.com/calendar/embed?src=pogsgroza%40gmail.com&ctz=Asia%2FTokyo" style="border: 0" width="635" height="500" frameborder="0" scrolling="no"></iframe>
 	<br>
@@ -77,9 +131,23 @@
 	<a class="twitter-timeline" data-width="600" data-height="500" href="https://twitter.com/Otogechara_BD?ref_src=twsrc%5Etfw">Tweets by Otogechara_BD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<br>
 	<p>「このキャラがいない」「○○の誕生日が違う」「このシリーズを入れてほしい」等何か問題or要望がありましたら<a href="https://twitter.com/Ryusei_33_635">作者twitter</a>までお願いします</p>
+	<br>
+	<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<div class="line-it-button" data-lang="ja" data-type="share-a" data-env="REAL" data-url="https://developers.line.biz/ja/docs/line-social-plugins/install-guide/using-line-share-buttons/" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+	<script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+	<a href="https://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/v4/public/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+	<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fryusaza.github.io%2Fotogecharabirthday%2F&layout&size&width=102&height=20&appId" width="102" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="20" allowfullscreen="true" allow="autoplay; clipboard-white; encrypted-media; picture-in-picture; web-share"></iframe>
 
-	<footer>
-	<p>since 2023<br>©Ryusaza</p>
+	<footer class="footer-001">
+	    <nav>
+	        <ul class="footer-001__list">
+	            <li><a href="#" class="footer-001__link">TOP</a></li>
+	            <li><a href="#" class="footer-001__link">登録キャラ一覧(五十音別)</a></li>
+	            <li><a href="#" class="footer-001__link">登録キャラ一覧(誕生月別)</a></li>
+	        </ul>
+	    </nav>
+	    <p class="footer-001__copyright">@ 2023 Ryusaza All rights reserved.</p>
 	</footer>
 </body>
 
